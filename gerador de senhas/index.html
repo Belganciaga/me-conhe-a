@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de Nome de Usuário e Senha</h2>
+        <div class="input-group">
+            <label for="name">Seu nome completo:</label>
+            <input type="text" id="name">
+        </div>
+        
+        <div class="input-group">
+            <label for="birthdate">data de nascimento:</label>
+            <input type="text" id="birthdate">
+        </div>
+        <div class="input-group">
+            <label for="length">Tamanho da senha:</label>
+            <input type="number" id="length" min="1" max="50" value="10">
+        </div>
+        <div class="input-group">
+            <label for="generateOptions">O que você quer gerar?</label>
+            <select id="generateOptions">
+                <option value="both">Nome de usuário e senha</option>
+                <option value="username">Apenas nome de usuário</option>
+                <option value="password">Apenas senha</option>
+            </select>
+        </div>
+        <button onclick="generate()">Gerar</button>
+        <ul id="infoList"></ul>
+        <button onclick="viewPasswords()">Visualizar senhas</button>
+        <ul id="passwordList"></ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
