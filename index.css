@@ -1,0 +1,138 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.retro-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#nome {
+    margin: 20px 0 0;
+    animation: floatAnimation 2s infinite alternate;
+}
+#sobre {
+    max-width: 800px;
+    margin: 20px auto;
+    
+    background-size: auto 100%; /* Define a largura da imagem para auto e a altura para 100% da altura da seção */
+    padding: 60px; /* Adicione algum espaço para separar o texto da imagem */
+}
+
+#sobre .social-icons {
+    margin-top: 20px;
+}
+
+#sobre .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#sobre .social-icons img {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#sobre .social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+ 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.project {
+    border: 2px solid #1a1a1a;
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #fff;
+}
+
+.project a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+#contato {
+    width: calc(80% - 20px); /* Ajuste para garantir que o textarea não toque nas bordas */
+    position: relative;
+    padding: 5px; /* Ajuste o padding conforme necessário para afastar o conteúdo das bordas */
+    margin-bottom: 20px;
+    width:800px;
+    border: 2px solid #1a1a1a;
+    background-color: #333;
+}
+
+#contato textarea {
+    width: calc(80% - 20px); /* Ajuste para garantir que o textarea não toque nas bordas */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    resize: none;
+}
+
+#contato button {
+    
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 5px !important; /* Utilize !important para garantir que essa regra seja aplicada */
+    margin: 0; /* Adicione esta linha para garantir que não há margens interferindo */
+    line-height: 1; /* Redefine a altura da linha para garantir que seja mínima */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
